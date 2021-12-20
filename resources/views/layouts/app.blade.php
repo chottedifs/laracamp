@@ -5,7 +5,7 @@
     
     @include('components.style')
 
-    <title>Laracamp by BuildWith Angga</title>
+    <title>Lets ID</title>
 </head>
 
 <body>

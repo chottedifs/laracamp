@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{ route('welcome') }}">
             <img src="/assets/images/logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                     <img src="{{ Auth::user()->avatar }}" class="user-photo rounded-circle" alt="">
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="right: 0; left: auto">
                         <li>
-                            <a href="#" class="dropdown-item">My Dashboard</a>
+                            <a href="{{ route('dashboard') }}" class="dropdown-item">My Dashboard</a>
                         </li>
                         <li>
                             <a href="#" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sign Out</a>
