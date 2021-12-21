@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\User\CheckoutController; 
+use App\Http\Controllers\User\CheckoutController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -19,7 +19,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
-    
+
 // Socialite Routes
 Route::get('sign-in-google', [UserController::class, 'google'])->name('user-login-google');
 Route::get('auth/google/callback', [UserController::class, 'handleProviderCallback'])->name('user.google.callback');
@@ -33,7 +33,7 @@ Route::post('checkout/{camp}', [CheckoutController::class,'store'])->name('check
 
 // User Dashboard Routes
 Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
-
+Route::get('dashboard/checkout/invoice/{checkout}', [CheckoutController::class, 'invoice'])->name('user.checkout.invoice');
 });
 
 require __DIR__.'/auth.php';
