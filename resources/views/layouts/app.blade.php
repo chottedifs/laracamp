@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    
+
     @include('components.style')
 
-    <title>Lets ID</title>
+    <title>Laracamp</title>
 </head>
 
 <body>

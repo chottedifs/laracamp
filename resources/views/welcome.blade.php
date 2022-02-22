@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    
+
 <section class="banner">
     <div class="container">
         <div class="row justify-content-center">
@@ -366,13 +366,13 @@
                                 Code is really important if we want to build a company and strike to the win
                             </p>
                             <div class="user">
-                                <img src="{{ asset('assets/images/angga.png') }}" class="photo" alt="">
+                                <img src="{{ asset('assets/images/.png') }}" class="photo" alt="">
                                 <div class="info">
                                     <h4 class="name">
-                                        Angga
+                                        Aldi Husadif
                                     </h4>
                                     <p class="role">
-                                        CEO at BWA Corp
+                                        CEO at Acode
                                     </p>
                                 </div>
                             </div>
