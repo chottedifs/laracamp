@@ -5,7 +5,7 @@
 
     @include('components.style')
 
-    <title>Laracamp</title>
+    <title>Acodeme</title>
 </head>
 
 <body>
